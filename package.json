@@ -8,7 +8,9 @@
     "check": "tsc --noEmit",
     "test": "bun test",
     "migrate": "bun src/migrate.ts",
-    "buyer": "bun examples/buyer.ts"
+    "buyer": "bun examples/buyer.ts",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "dependencies": {
     "@circle-fin/developer-controlled-wallets": "10.8.0",
@@ -21,6 +23,7 @@
   "devDependencies": {
     "@types/bun": "1.4.2",
     "@types/pg": "8.23.1",
+    "prettier": "3.9.6",
     "typescript": "7.0.2"
   }
 }

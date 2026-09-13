@@ -13,6 +13,7 @@ Install Bun and PostgreSQL, then install the pinned dependencies:
 
 ```sh
 bun install --frozen-lockfile
+bun run format:check
 bun run check
 createdb jio_payments_test
 DATABASE_URL=postgresql://localhost:5432/jio_payments_test bun test
@@ -21,6 +22,8 @@ DATABASE_URL=postgresql://localhost:5432/jio_payments_test bun test
 Adjust the database connection for your environment. Tests require a dedicated
 `jio_payments_test` database and truncate its payment tables. They use mocked
 provider responses and do not buy compute or send payments.
+
+Run `bun run format` to apply the repository formatter before committing.
 
 Keep changes focused on payments and the existing compute adapter. Add a
 regression test for money, authentication, or recovery behavior. Documentation

@@ -10,15 +10,15 @@ the account lifetime policy and any required CA certificate.
 
 ## Required endpoints
 
-| Existing route | Gateway use |
-| --- | --- |
-| `GET /v0/health` | Advertised size catalog including `small` |
-| `GET /v1/usage` | Account reservations, enforced TTL and optional rental maximum |
-| `POST /v1/sessions` | Create with `profile`, `client_public_key` and an idempotency key |
-| `GET /v1/operations/{id}` | Recover the durable operation status |
-| `GET /v1/sessions/{id}` | Current lifecycle and expiry |
-| `POST /v1/sessions/{id}/stop` | Existing stop operation, where account policy permits |
-| `DELETE /v1/sessions/{id}` | Existing destruction with an idempotency key |
+| Existing route                | Gateway use                                                       |
+| ----------------------------- | ----------------------------------------------------------------- |
+| `GET /v0/health`              | Advertised size catalog including `small`                         |
+| `GET /v1/usage`               | Account reservations, enforced TTL and optional rental maximum    |
+| `POST /v1/sessions`           | Create with `profile`, `client_public_key` and an idempotency key |
+| `GET /v1/operations/{id}`     | Recover the durable operation status                              |
+| `GET /v1/sessions/{id}`       | Current lifecycle and expiry                                      |
+| `POST /v1/sessions/{id}/stop` | Existing stop operation, where account policy permits             |
+| `DELETE /v1/sessions/{id}`    | Existing destruction with an idempotency key                      |
 
 The adapter lives in [src/compute.ts](../src/compute.ts). The API key is sent as a
 Bearer token and remains server-only. Buyer-supplied payment-status headers are
@@ -60,11 +60,11 @@ not a separately published plan, and does not implement subscription credits.
 
 Total micro-USDC = `ceil(duration_seconds × 8550 / 3600)`:
 
-| Duration | Amount |
-| --- | --- |
+| Duration   | Amount        |
+| ---------- | ------------- |
 | 30 seconds | 0.000072 USDC |
 | 30 minutes | 0.004275 USDC |
-| 1 day | 0.205200 USDC |
+| 1 day      | 0.205200 USDC |
 
 These are price calculations, not guarantees that the backend offers each duration.
 No capacity is reserved by a quote.

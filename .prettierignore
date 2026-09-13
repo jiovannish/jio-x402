@@ -1,0 +1,4 @@
+bun.lock
+# Preserve recorded evidence exactly as captured.
+docs/live-*.json
+docs/source-digests.json

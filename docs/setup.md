@@ -27,14 +27,14 @@ createdb jio_payments
 
 Edit `.env` with your deployment's values:
 
-| Variable | Purpose |
-| --- | --- |
-| `DATABASE_URL` | PostgreSQL connection string |
-| `PUBLIC_ORIGIN` | Exact externally visible gateway origin; use `http://127.0.0.1:4020` locally |
-| `PORT` | Local listener port; defaults to `4020` |
-| `SELLER_ADDRESS` | Trusted Arc Testnet EOA receiving payment |
-| `JIO_API_URL` | Existing Jio compute API endpoint |
-| `JIO_API_KEY` | Dedicated provisioning account key; keep server-only |
+| Variable         | Purpose                                                                      |
+| ---------------- | ---------------------------------------------------------------------------- |
+| `DATABASE_URL`   | PostgreSQL connection string                                                 |
+| `PUBLIC_ORIGIN`  | Exact externally visible gateway origin; use `http://127.0.0.1:4020` locally |
+| `PORT`           | Local listener port; defaults to `4020`                                      |
+| `SELLER_ADDRESS` | Trusted Arc Testnet EOA receiving payment                                    |
+| `JIO_API_URL`    | Existing Jio compute API endpoint                                            |
+| `JIO_API_KEY`    | Dedicated provisioning account key; keep server-only                         |
 
 Then apply migrations and start the gateway:
 
@@ -67,15 +67,15 @@ USDC into Gateway. Smart contract accounts are unsupported for this integration.
 
 Configure these values for the buyer process:
 
-| Variable | Purpose |
-| --- | --- |
-| `CIRCLE_API_KEY` | Circle Testnet key with Wallets access |
-| `CIRCLE_ENTITY_SECRET` | Registered entity secret |
-| `CIRCLE_WALLET_ADDRESS` | Buyer's Arc Testnet EOA |
-| `SELLER_ADDRESS` | Seller address the buyer trusts |
-| `PUBLIC_ORIGIN` | Gateway origin the buyer trusts |
-| `SSH_PUBLIC_KEY` | `ssh-ed25519` public key, without a trailing comment |
-| `BUDGET_ATOMIC` | Total local spending cap in micro-USDC; default `10000` |
+| Variable                | Purpose                                                 |
+| ----------------------- | ------------------------------------------------------- |
+| `CIRCLE_API_KEY`        | Circle Testnet key with Wallets access                  |
+| `CIRCLE_ENTITY_SECRET`  | Registered entity secret                                |
+| `CIRCLE_WALLET_ADDRESS` | Buyer's Arc Testnet EOA                                 |
+| `SELLER_ADDRESS`        | Seller address the buyer trusts                         |
+| `PUBLIC_ORIGIN`         | Gateway origin the buyer trusts                         |
+| `SSH_PUBLIC_KEY`        | `ssh-ed25519` public key, without a trailing comment    |
+| `BUDGET_ATOMIC`         | Total local spending cap in micro-USDC; default `10000` |
 
 Keep signing credentials in the buyer process, separate from the public gateway
 and rented computer. The buyer does not need the gateway's Jio provisioning key.
