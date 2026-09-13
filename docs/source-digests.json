@@ -1,0 +1,30 @@
+{
+  "gateway_branch": "feat/arc-compute-payments",
+  "gateway_committed": false,
+  "files_sha256": {
+    "bun.lock": "7d1b298ecfb8abee1bbac98963b4579418d8d9e11fdb030247ff9faca1d1e89f",
+    "examples/buyer.ts": "a4ef80cf72f52e1fa4048061c1fa0fe33ad27ed8230ccf39583cf822b73685fc",
+    "examples/check-live.ts": "ee0f20d9517a921e56994c6996f6626793f0176ad9ba630e418febde706ad236",
+    "examples/setup-testnet.ts": "fb9fd266fcefe99edb8d28a2b470e082b87e4289e2e7143c8e2a433a97a2d0f9",
+    "examples/test-live-refund.ts": "b4de5c9c40cb4218ca494ff166314449cdfac0e3bc6f8ad90a876b5a904c3ea8",
+    "examples/test-live.ts": "95ab5ff3453bd76419fa5038e5e146ce242862852baeafda804dd400c0ca04fe",
+    "migrations/001-payments.sql": "7d710041b716193696483cc6a64e0ddd1e9289308bb419676d113f095b0b1f5b",
+    "migrations/002-recovery.sql": "526d942588c4a223f014792833420a7b54ee7e3c596e9a2ea37e06a0cafcece3",
+    "package.json": "13522fe812821972b9f1fb2bd909f638a3c2dddcc9a64c82f21825c3b484259a",
+    "src/buyer.ts": "8f96dbc740d6e5fc7476c69e21e00b20a29f17eedcecfe9f4e765f5227f40066",
+    "src/compute.ts": "eaff82dbe44996569ff4db5cf412c9444eddbf0798e53669b9b0de53faec3737",
+    "src/contract.ts": "73e18de7e7c051c7569e039b739969ac02f8387c49a874bc81c3e05aab8efea5",
+    "src/db.ts": "d85ba467ff7ca7e1409c86bcde6994906e67f0efecdfde1e0937da1cc030ec47",
+    "src/migrate.ts": "e1004fe1135f091298cf0eb2c893dad62ca1f9ec94969d33c4758975428f063d",
+    "src/openapi.ts": "eebd8d73724532f8717b765002739c329eec87bac513d6c0b9f3b3ea60207cfc",
+    "src/payment.ts": "cbd80d09dbc92d27bb637e90518cb9a2a02683b1887aef0571004a34600ee3c9",
+    "src/refunds.ts": "8eb533dc35f3d5f935ba087167f3ff7a50c0e9b98607f0c876fa519f69bca76f",
+    "src/server.ts": "9b7e41d19d2b30ab29c6dab9e502b40d7f7da24dfac57f220ce605ca078ed7a9",
+    "src/worker.ts": "da5acb3cc7e2ff9c85e7972b3fd60deca5c8dc4a5f7c0dd9c2a75f93e802f96e",
+    "tests/payments.test.ts": "f4d0dc3c1215dd128948e320ab60a00a75315144be719c80c0e74c023a78e668",
+    "tsconfig.json": "4dc04b191bf94ab851419f7c62b4514bc1d1ec2eadaf8bff5b97c002f6d84b5b"
+  },
+  "server_base": "4f0665c01c085bbd68049a72a0a230a69bf65078",
+  "server_branch": "feat/paid-compute-lifetimes",
+  "server_diff_sha256": "1616c6327a3123d68968c6a33ebc747f3058f540524a341d38663508191f5698"
+}

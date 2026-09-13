@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-09-13T07:34:07.893Z",
+  "order_id": "d9ac86b5-3a4a-433b-9615-1c48c07024e0",
+  "payment_status": "accepted",
+  "compute_status": "failed",
+  "operation_id": null,
+  "computer_id": null,
+  "provider_reference": "1b8f87db-70df-4f36-b88f-f3f329d92c61",
+  "payment_response": {
+    "payer": "0x525cb74cd52407bf58ddbaefd9bb6d2d102e5834",
+    "network": "eip155:5042002",
+    "success": true,
+    "transaction": "1b8f87db-70df-4f36-b88f-f3f329d92c61"
+  },
+  "terms": {
+    "vcpu": 1,
+    "network": "eip155:5042002",
+    "currency": "USDC",
+    "operation": "create",
+    "memory_mib": 2048,
+    "price_basis": "proportional_published_resource_rate_no_subscription",
+    "purchase_url": "http://127.0.0.1:4020/v1/compute/quotes/d9ac86b5-3a4a-433b-9615-1c48c07024e0/purchase",
+    "billing_start": "admission",
+    "duration_source": "account",
+    "configuration_id": "small",
+    "duration_seconds": 1800,
+    "capacity_reserved": false,
+    "client_public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICDdRJdlVz+HPu2sj26Qr1gqXE0jPQVmXeUi6rU4dFoj",
+    "max_amount_atomic": "4275",
+    "total_amount_atomic": "4275"
+  },
+  "requirements": {
+    "asset": "0x3600000000000000000000000000000000000000",
+    "extra": {
+      "name": "GatewayWalletBatched",
+      "version": "1",
+      "verifyingContract": "0x0077777d7EBA4688BDeF3E311b846F25870A19B9"
+    },
+    "payTo": "0x4a3083da6af7b7786a85be850149a65a23e95cef",
+    "amount": "4275",
+    "scheme": "exact",
+    "network": "eip155:5042002",
+    "maxTimeoutSeconds": 605100
+  },
+  "refund_status": "confirmed",
+  "refund_amount_atomic": "4275",
+  "refund_transfer_id": "a4218dc2-6e65-5cab-8649-743e9c0224da",
+  "refund_transaction_hash": "0x4ac3543fbe28b98469897cd02c0f7ff48e0fe8ecabdc6ce186aeb1f640bcbd8d",
+  "status_url": "http://127.0.0.1:4020/v1/compute/orders/d9ac86b5-3a4a-433b-9615-1c48c07024e0",
+  "settlement_status": "unconfirmed",
+  "provisioning_failure_injected": true,
+  "local_acceptance_loss_injected": true,
+  "create_attempts_this_run": 1,
+  "real_computers_created": 0,
+  "onchain_verified": {
+    "status": "success",
+    "block": "61862944",
+    "amount_atomic": "4275",
+    "from": "0x4a3083dA6AF7B7786a85bE850149A65A23E95CeF",
+    "to": "0x525CB74CD52407bf58dDbaefD9bB6D2D102e5834"
+  },
+  "initial_verification_at": "2026-09-13T07:27:31.487Z",
+  "settlement_transaction_hash": null,
+  "quote_expires_at": "2026-09-13T07:28:24.915Z",
+  "computer": null,
+  "computer_status_available": false
+}

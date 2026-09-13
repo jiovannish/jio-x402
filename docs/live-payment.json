@@ -1,0 +1,78 @@
+{
+  "checked_at": "2026-09-13T07:35:19.394Z",
+  "order_id": "f80f8bc0-1a78-4d5a-9373-3a446b6f7728",
+  "payment_status": "settled",
+  "compute_status": "ready",
+  "operation_id": "a97e465c086faa5dbc1b9bde5ae6d84d",
+  "computer_id": "e497814fc68d990251143868ffa2ec55",
+  "provider_reference": "eb246194-8e58-4730-967d-5ec8715add8a",
+  "payment_response": {
+    "payer": "0x525cb74cd52407bf58ddbaefd9bb6d2d102e5834",
+    "network": "eip155:5042002",
+    "success": true,
+    "transaction": "eb246194-8e58-4730-967d-5ec8715add8a"
+  },
+  "terms": {
+    "vcpu": 1,
+    "network": "eip155:5042002",
+    "currency": "USDC",
+    "operation": "create",
+    "memory_mib": 2048,
+    "price_basis": "proportional_published_resource_rate_no_subscription",
+    "purchase_url": "http://127.0.0.1:4020/v1/compute/quotes/f80f8bc0-1a78-4d5a-9373-3a446b6f7728/purchase",
+    "billing_start": "admission",
+    "configuration_id": "small",
+    "duration_seconds": 1800,
+    "capacity_reserved": false,
+    "client_public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICDdRJdlVz+HPu2sj26Qr1gqXE0jPQVmXeUi6rU4dFoj",
+    "max_amount_atomic": "4275",
+    "total_amount_atomic": "4275"
+  },
+  "requirements": {
+    "asset": "0x3600000000000000000000000000000000000000",
+    "extra": {
+      "name": "GatewayWalletBatched",
+      "version": "1",
+      "verifyingContract": "0x0077777d7EBA4688BDeF3E311b846F25870A19B9"
+    },
+    "payTo": "0x4a3083da6af7b7786a85be850149a65a23e95cef",
+    "amount": "4275",
+    "scheme": "exact",
+    "network": "eip155:5042002",
+    "maxTimeoutSeconds": 605100
+  },
+  "refund_status": null,
+  "refund_amount_atomic": null,
+  "refund_transfer_id": null,
+  "refund_transaction_hash": null,
+  "status_url": "http://127.0.0.1:4020/v1/compute/orders/f80f8bc0-1a78-4d5a-9373-3a446b6f7728",
+  "settlement_status": "settled",
+  "validated_compute": {
+    "profile": "small",
+    "vcpu": 1,
+    "memory_mib": 2048,
+    "expires_at_unix_seconds": 1789285891,
+    "release": {
+      "core_sha256": "bf5e40724f1cea525f40501d1c759abe39b0f5604002f7351d3e589b9e3a316d",
+      "disk_mib": 41216,
+      "max_vms": 2,
+      "memory_mib": 2048,
+      "software_release": "ubuntu2404-systemd-warm-v1",
+      "template_id": "774fa7348965a6fbee9e3fc3d89672ef00a1911b1bb92bcaaf0366073368f706",
+      "vcpu": 1
+    }
+  },
+  "initial_verification_at": "2026-09-13T07:26:21.352Z",
+  "settlement_transaction_hash": "0x51572198f17574b741330122b2abd0d4bf5d13dc63037a61b8c545c80b334c65",
+  "quote_expires_at": "2026-09-13T07:22:27.519Z",
+  "computer": {
+    "state": "destroyed",
+    "expires_at_unix_seconds": 1789285891,
+    "last_checked_at_unix_seconds": 1789284381
+  },
+  "computer_status_available": true,
+  "settlement_onchain_verified": {
+    "status": "success",
+    "block": "61862890"
+  }
+}

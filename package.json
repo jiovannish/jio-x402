@@ -1,0 +1,26 @@
+{
+  "name": "jio-x402",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun src/server.ts",
+    "check": "tsc --noEmit",
+    "test": "bun test",
+    "migrate": "bun src/migrate.ts",
+    "buyer": "bun examples/buyer.ts"
+  },
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "10.8.0",
+    "@circle-fin/x402-batching": "3.4.0",
+    "@x402/core": "2.25.0",
+    "@x402/evm": "2.25.0",
+    "pg": "8.23.0",
+    "viem": "2.56.5"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.2",
+    "@types/pg": "8.23.1",
+    "typescript": "7.0.2"
+  }
+}

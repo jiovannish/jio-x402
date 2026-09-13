@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-13T06:58:34.257Z",
+  "jio": {
+    "account": "jio-x402-20260913",
+    "cpu": 1,
+    "memory_mib": 2048,
+    "ttl_seconds": 1800,
+    "retained": 0
+  },
+  "circle": {
+    "network": "eip155:5042002",
+    "asset": "0x3600000000000000000000000000000000000000",
+    "gateway": "0x0077777d7EBA4688BDeF3E311b846F25870A19B9"
+  },
+  "real_payment_executed": false
+}
